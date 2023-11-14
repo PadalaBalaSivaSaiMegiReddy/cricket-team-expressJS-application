@@ -19,6 +19,11 @@ const initializeDbAndServer = async () => {
 };
 initializeDbAndServer();
 
+//HomePage 
+app.get("/", (request, response) => {
+	response.send("Cricket Team App");
+});
+
 // return a list of all the players from the team
 // API 1
 
